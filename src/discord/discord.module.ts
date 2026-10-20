@@ -14,7 +14,11 @@ import { ChefSchedulerService } from './services/chef-scheduler.service';
 import { AutoThreadingService } from './services/auto-threading.service';
 import { CommandDispatcherService } from './services/command-dispatcher.service';
 import { WelcomeService } from './services/welcome.service';
+import { BountyOnboardingService } from './services/bounty-onboarding.service';
+import { BountyPublicationService } from './services/bounty-publication.service';
+import { BountyWizardViews } from './views/bounty-wizard.views';
 import { OnboardingCommand } from './commands/onboarding';
+import { CreateBountyCommand } from './commands/create-bounty';
 import { RankCommand } from './commands/rank';
 import { DailyCommand } from './commands/daily';
 import { QuestCommand } from './commands/quest';
@@ -57,7 +61,11 @@ const DISCORD_CLIENT = {
     AutoThreadingService,
     CommandDispatcherService,
     WelcomeService,
+    BountyOnboardingService,
+    BountyPublicationService,
+    BountyWizardViews,
     OnboardingCommand,
+    CreateBountyCommand,
     RankCommand,
     DailyCommand,
     QuestCommand,

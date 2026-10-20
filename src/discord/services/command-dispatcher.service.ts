@@ -12,6 +12,7 @@ import { RankCommand } from '../commands/rank';
 import { QuestCommand } from '../commands/quest';
 import { ProposalsCommand } from '../commands/proposals';
 import { OnboardingCommand } from '../commands/onboarding';
+import { CreateBountyCommand } from '../commands/create-bounty';
 import { LeaderboardCommand } from '../commands/leaderboard';
 import { XpSyncService } from './xp-sync.service';
 import { DiscordRoleService } from './discord-role.service';
@@ -40,6 +41,7 @@ export class CommandDispatcherService {
     private quest: QuestCommand,
     private proposals: ProposalsCommand,
     private onboarding: OnboardingCommand,
+    private createBounty: CreateBountyCommand,
     private leaderboard: LeaderboardCommand,
     private xpSyncService: XpSyncService,
     private roleService: DiscordRoleService,
